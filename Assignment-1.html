@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <u>Assignment no 1</u>
+  </head>
+  <body>
+    <p>Today is: <span id="ID1"></span></p>
+    <p>Current Time is: <span id="ID2"></span></p>
+    <script>
+      var time = new Date();
+      var d = new Date();
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.getElementById("ID1").innerHTML = days[d.getDay()];
+      document.getElementById("ID2").innerHTML = time.toLocaleString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: true,
+      });
+    </script>
+  </body>
+</html>
