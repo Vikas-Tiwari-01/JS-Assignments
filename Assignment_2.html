@@ -1,0 +1,39 @@
+<html>
+  <head> </head>
+  <body>
+    <p id="ID1"></p>
+    <script>
+        var a = "This is Vikas!!";
+        let b = 32;
+        const c = 21;
+        // This will simply print the value stored, here I've stored string so it will return string 
+        console.log("%c This is a variable created using var keyword:","color:red",a); 
+
+        // This will print the number 32 directly noting changed here
+        console.log("%c This is a variable created using let keyword:","color:blue",b); 
+
+        /*This will print the constant value of c i.e. 21.In the whole program we cannot change it's 
+        value and if we will try to alter it's value then it will throw an error */
+        console.log("%c This is a constant variable created using const keyword:","color:green",c); 
+
+        console.log("\n");
+        {
+        /* This let b is inside the block so it scope will remain to this block only
+        outside of the block it's value will be 32 as above but inside it's value will be 34 */
+        let b = 129;
+        console.log("%c This is a variable inside the function:","color:red",a); 
+        console.log("%c This is a variable inside the function:","color:blue",b);
+        console.log("%c This is a constant variable created using const keyword:","color:green",c);
+        }
+        /* The below code is out of the fucntion's scope so it'll print the value declared at the starting 
+        i.e 32 */
+        console.log("\n%c This is a variable outside the function:","color:magenta",b);
+
+        //Some Points 
+        //1.The constant variable must be initialized with it's declaration,it will throw an error if we decide to initalize it afterwards
+        //2.The main objective of using var and let is the scope of the varaibles,let keyword have scope within the block only whereas the var keyword has global accessbility
+        //3.Constant Arrays can take many values, we can add elements to it but we cannot alter it's values
+        
+    </script>
+  </body>
+</html>

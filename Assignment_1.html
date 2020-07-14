@@ -1,0 +1,28 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+        // This stores the string values
+        var a = "This is a String Variable"; 
+        // This stores the number variable
+        var b = 32; 
+        // This stores the object
+        var c = { name: "Vikas", age: 21, course: "javascript" }; 
+        // Starts Calculating time from where this time() function is called
+        console.time("Time Taken"); 
+        // Prints the variables in the tabular format with corrsponding values
+        console.table({ a, b, c }); 
+        // Prints warning message if user want to give any warning
+        console.warn("This is Warning msg"); 
+        // Prints error messages if user wishes to print out the errors in the project
+        console.error("A Serious Error Occured!!!!"); 
+         // It's basically used for creating debugging checkpoints where programmer wishes to debug the code
+        console.debug("I'm here as a debuuger");
+        // Prints out the message useful for keeping some info tracks
+        console.info("This is info!!"); 
+        /* Calculates the time from starting time to end, both fucntion i.e line 8 
+        and line 12 must have same arguments to print the taken execution time */
+        console.timeEnd("Time Taken"); 
+    </script>
+  </body>
+</html>
