@@ -1,0 +1,77 @@
+<html>
+  <head></head>
+  <body>
+      <script>
+        //Strings Related Operations
+        let a = "SHOOT FOR THE MOON";
+        let b = ` Even if you'll miss`;
+        let c = ' You will land among Stars among dust';
+        console.log(a);
+        //Converts the string to lowercase alphabets
+        console.log(a.toLowerCase());
+        //Prints out the character at the specified index place
+        console.log(a.charAt(8));
+        //Returns Unicode character value at the specified index
+        console.log(a.charCodeAt(8));
+        //Concatenates the strings
+        console.log(a.concat(b,c))
+        //Calculates the length of a string, also counts whitespaces
+        console.log(a.length);
+        //The search() fucntion will only accept single value and retruns the corresponding index 
+        console.log(a.search('O'));
+        //The slice() function will slice the whole array with specified starting and ending index
+        console.log(a.slice(4,15));
+        //Returns true if the string ends with the specified substring
+        console.log(a.endsWith('OON'));
+        //Returns true if the string has any specified value or substring
+        console.log(b.includes('Moon'));
+        //Converts the string to Uppercase
+        console.log(b.toUpperCase());
+        //Returns the index of the specified substring
+        console.log(c.indexOf('will'));
+        /* returns the last index of the substring, if a string contains 
+        multiple same string then it will return the last string index */
+        console.log(c.lastIndexOf("among"));
+        //Replaces the substring with specified string
+        console.log(c.replace("land","fall"));
+        //Removes the starting and ending whitespaces in the string
+        console.log(c.trim());
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Array Related Operations
+        let Myarr=["Vikas",23,[1,2,3],{Javascript:"Course"}];
+        let Myanimals=["CAT","DOG","TIGER","LION","SHEEP"];
+        console.log(Myarr);
+        //Concatenates the arrays
+        console.log(Myarr.concat(Myanimals));
+        //Returns the Index of specified value in the array
+        console.log(Myanimals.indexOf("TIGER"));
+        //Combines the values of the arrays seperated by commas
+        console.log(Myarr.join());
+        //Returns the length of the array
+        console.log(Myanimals.length);
+        //Adds a new value to the array at the end 
+        console.log(Myanimals.push("SNAKE"));
+        console.log(Myanimals);
+        //Removes the last value from the array
+        console.log(Myanimals.pop());
+        console.log(Myanimals);
+        //Reverses the array
+        console.log(Myanimals.reverse());
+        //Removes the value at the specified Index and at their place adds the specified values
+        console.log(Myanimals.splice(1,2,"HYENA","RABBIT","HORSE"));
+        console.log(Myanimals);
+        //Converts the array to the string
+        console.log(Myanimals.toString());
+        //Adds the specified value at the starting of array
+        console.log(Myanimals.unshift("VELOCIRAPTOR"));
+        console.log(Myanimals);
+        //Removes the specified value at the starting of array
+        console.log(Myanimals.shift());
+        console.log(Myanimals);
+        //Arranges in the ascending/descending order
+        console.log(Myanimals.sort());
+
+    </script>
+  </body>
+</html>
+     
