@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <script>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      // Grades Evaluation using conditional operators
+      let marks=Number(prompt("Enter the Mark of Student:"));
+      if(marks<30)
+      {
+          console.log("You Failed in the examination")
+      }
+      else if(marks>=30 && marks<50)
+      {
+          console.log("You've passed with " +marks+ " marks and Grade is B");
+      } 
+      else if(marks>=50 && marks<70)
+      {
+          console.log("You've passed with " +marks+ " marks and Grade is B+");
+      } 
+      else if(marks>=80 && marks<90)
+      {
+          console.log("You've passed with " +marks+ " marks and Grade is A");
+      }  
+      else if(marks>=90 && marks<=100)
+      {
+          console.log("You've passed with " +marks+ " marks and Grade is A+");
+      }
+      else
+      {
+          console.log("Please input the correct data:");
+      }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
+      // Grades Evaluation using switch case
+      const marksGot=Number(prompt("Enter the Mark of Student:"));
+      switch(true)
+      {
+            case marksGot>=90:
+            console.log("You've passed with " +marksGot+ " marks and Grade is A+");
+            break; 
+            
+            case marksGot>=80:
+            console.log("You've passed with " +marksGot+ " marks and Grade is A");
+            break; 
+            
+            case marksGot>=50:
+            console.log("You've passed with " +marksGot+ " marks and Grade is B+");
+            break; 
+            
+            case marksGot>=30:
+            console.log("You've passed with " +marksGot+ " marks and Grade is B");
+            break;
+
+            default:
+            console.log("You've Failed");
+      }
+       
+    </script>
+  </body>
+</html>
