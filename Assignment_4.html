@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+      <script>
+          let a,b,num1,num2,addition,subtraction,multiply,divide,percentage,squareroot;
+          alert("Please Enter only numerical values with space seperation like 45 + 43 and not like 45+43, for square root use first variable as s like s √ 4 separated by space:");
+          a =prompt("Enter the operations to perform");
+          b=a.split(" ");
+          num1=Number(b[0]);
+          //Index[1] is for operators
+          num2=Number(b[2]);
+
+          if(b[1]=="+")
+          {
+              addition=num1 + num2;
+              console.log("The addition is:"+addition);
+          }
+
+          else if(b[1]=="-")
+          {
+              subtraction=num1 - num2;
+              console.log("The subtraction is:"+subtraction);
+          } 
+          
+          else if(b[1]=="*")
+          {
+              multiply=num1 * num2;
+              console.log("The multiplication is:"+multiply);
+          } 
+          
+          else if(b[1]=="/")
+          {
+              divide=num1 / num2;
+              console.log("The Division n is:"+divide);
+          } 
+          
+          else if(b[1]=="%")
+          {
+              percentage=(num1/100)*num2;
+              console.log("The percentage is:"+percentage);
+          }
+
+          else if(b[1]=="√")
+          {
+              squareroot=Math.sqrt(num2);
+              console.log("The SquareRoot is:"+squareroot);
+          }
+      </script>
+  </body>
+</html>

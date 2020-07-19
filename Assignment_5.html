@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+      <script>
+
+       let sales,commission;
+       sales=Number(prompt("Enter Sales in figures:"));
+
+       if(sales>0 && sales<=5000)
+       {
+           commission=(sales/100)*2;
+           console.log("The Commission is:"+commission);
+       }
+
+       else if(sales>=5001 && sales<=10000)
+       {
+           commission=(sales/100)*5;
+           console.log("The Commission is:"+commission);
+       }
+
+       else if(sales>=10001 && sales<=20000)
+       {
+           commission=(sales/100)*7;
+           console.log("The Commission is:"+commission);
+       }
+
+       else if(sales>20000)
+       {
+           commission=(sales/100)*10;
+           console.log("The Commission is:"+commission);  
+       }
+
+       else
+       {
+           console.log("Wrong Input");
+       }
+
+      </script>
+  </body>
+</html>
